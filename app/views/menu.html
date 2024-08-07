@@ -1,0 +1,22 @@
+
+
+
+<div ng-controller="menuCtrl">
+    <h2>Menu</h2>
+    
+    <div class="salads-container">
+        <div class="salad" ng-repeat="salad in salads" ng-click="showDetails(salad)">
+            <img ng-src="{{salad.image}}" alt="{{salad.title}}">
+            <h3>{{salad.title}}</h3>
+        </div>
+    </div>
+
+    <div class="salad-details" ng-if="selectedSalad">
+        <h3>{{selectedSalad.title}}</h3>
+        <p><strong>Calories:</strong> {{selectedSalad.nutrition.nutrients[0].amount}} kcal</p>
+        <p><strong>Price:</strong> ${{selectedSalad.pricePerServing / 100}}</p>
+        <p><strong>Ratings:</strong> {{selectedSalad.spoonacularScore}} / 100</p>
+        <img ng-src="{{selectedSalad.image}}" alt="{{selectedSalad.title}}">
+        <!-- <button ng-click="addToCart()">Add to Cart</button> -->
+    </div>
+</div>

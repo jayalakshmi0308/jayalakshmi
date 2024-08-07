@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "name": "venu",
+      "email": "venu@gmail.com",
+      "pass": "123"
+    },
+    {
+      "name": "jan",
+      "email": "jan@.com",
+      "pass": "789"
+    },
+    {
+      "name": "jan",
+      "email": "j@.com",
+      "pass": "456"
+    },
+    {
+      "name": "hari",
+      "email": "h@.com",
+      "pass": "456"
+    },
+    {
+      "name": "kay",
+      "email": "k@.com",
+      "pass": "12345"
+    },
+    {
+      "name": "lav",
+      "email": "l@.com",
+      "pass": "123"
+    },
+    {
+      "name": "kay",
+      "email": "a@.com",
+      "pass": "456"
+    },
+    {
+      "name": "rey",
+      "email": "r@.com",
+      "pass": "123"
+    },
+    {
+      "name": "renu",
+      "email": "e@.com",
+      "pass": "123"
+    },
+    {
+      "name": "niha",
+      "email": "niha@.com",
+      "pass": "789"
+    }
+  ],
+  "signin": [
+    {
+      "name": "venu",
+      "email": "venu@gmail.com",
+      "pass": "123"
+    },
+    {
+      "name": "jan",
+      "email": "jan@.com",
+      "pass": "789"
+    }
+  ],
+  "salads": [
+    {
+      "name": "Caesar Salad",
+      "calories": 180,
+      "price": "$5.99",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2RfbtXhEBFOEo6oML_Dvw6Cw5ziXe04G0uA&s",
+      "link": "https://www.example.com/caesar-salad"
+    },
+    {
+      "name": "Greek Salad"
+    }
+  ]
+}
