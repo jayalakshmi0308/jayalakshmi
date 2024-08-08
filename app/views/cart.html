@@ -1,14 +1,25 @@
-<div ng-controller="cartCtrl">
+
+
+
+
+
+ <div ng-controller="cartCtrl">
     <h2>Your Cart</h2>
+    
     <div class="cart" ng-if="cart.length > 0">
-        <div ng-repeat="item in cart">
-            <h4>{{item.title}}</h4>
-            <p>Price: ${{item.pricePerServing / 100}}</p>
-            <p>Calories: {{item.nutrition.nutrients[0].amount}} kcal</p>
-        </div>
-        <button ng-click="orderCart()">Order Now</button>
+        <ul>
+            <li ng-repeat="item in cart">{{item.title}} - ${{item.pricePerServing / 100}}</li>
+        </ul>
+        <button ng-click="orderCart()">Place Order</button>
     </div>
+    
     <div ng-if="cart.length === 0">
-        <p>Your cart is empty.</p>
+        <p>Your cart is empty!</p>
+    </div>
+    
+    <div class="order-notification" ng-if="orderPlaced">
+        <div class="sparkle"></div>
+        <div class="tick-mark">&#10003;</div>
+        <p>Your order is ready and will be delivered within 20 minutes!</p>
     </div>
 </div>

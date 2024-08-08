@@ -49,6 +49,31 @@
       "name": "niha",
       "email": "niha@.com",
       "pass": "789"
+    },
+    {
+      "name": "nivi",
+      "email": "n@.com",
+      "pass": "123"
+    },
+    {
+      "name": "manu",
+      "email": "m@.com",
+      "pass": "12345"
+    },
+    {
+      "name": "",
+      "email": "",
+      "pass": ""
+    },
+    {
+      "name": "harijan",
+      "email": "hari@gmail.com",
+      "pass": "234"
+    },
+    {
+      "name": "vj",
+      "email": "vj@.com",
+      "pass": "567"
     }
   ],
   "signin": [

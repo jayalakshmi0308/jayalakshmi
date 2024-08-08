@@ -1,6 +1,5 @@
 
 
-
 <div ng-controller="menuCtrl">
     <h2>Menu</h2>
     
@@ -16,7 +15,14 @@
         <p><strong>Calories:</strong> {{selectedSalad.nutrition.nutrients[0].amount}} kcal</p>
         <p><strong>Price:</strong> ${{selectedSalad.pricePerServing / 100}}</p>
         <p><strong>Ratings:</strong> {{selectedSalad.spoonacularScore}} / 100</p>
+        <p><strong>Benefits:</strong> {{selectedSalad.benefits}}</p>
+        <p><strong>Ingredients:</strong> <ul><li ng-repeat="ingredient in selectedSalad.extendedIngredients">{{ingredient.original}}</li></ul></p>
         <img ng-src="{{selectedSalad.image}}" alt="{{selectedSalad.title}}">
-        <!-- <button ng-click="addToCart()">Add to Cart</button> -->
+        <button ng-click="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="notification" ng-if="notification">
+        {{notification}}
     </div>
 </div>
+
